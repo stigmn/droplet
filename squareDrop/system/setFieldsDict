@@ -24,21 +24,12 @@ regions
 (
  boxToCell // Droplet position and size
     {
-        box (0.0486275 0.070 0) (0.0513725 0.07275 0.010);
+        box (0.003505 0.003505  0) (0.006505 0.006505 0.01);
         fieldValues
         (
             volScalarFieldValue alpha.water 1
         );
     }
- boxToCell // Basin depth
-    {
-	box (0 0 0) (0.100 0.010 0.010);
-        fieldValues
-        (
-            volScalarFieldValue alpha.water 1
-        );
-    }
-);
 
-
+ );
 // ************************************************************************* //
