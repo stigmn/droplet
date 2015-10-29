@@ -24,7 +24,7 @@ regions
 (
  boxToCell // Droplet position and size
     {
-        box (0.003505 0.003505  0) (0.006505 0.006505 0.01);
+        box (0.003505 0.003505  0) (0.006505 0.006505 0.001);
         fieldValues
         (
             volScalarFieldValue alpha.water 1

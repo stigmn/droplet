@@ -37,7 +37,7 @@ while i<n:
     f.write("0\n")
     i=i+1;
 
-f.write(");\n\n")
+f.write("); \n\n")
 
 f.write("boundaryField\n")
 f.write("{\n")
