@@ -22,9 +22,9 @@ defaultFieldValues
 
 regions
 (
- boxToCell // Droplet position and size
+ cylinderToCell // Droplet position and size
     {
-        box (0.0486275 0.070 0) (0.0513725 0.07275 0.010);
+        cylinder (0.05 0.070 0) (0.0 0.070 0.010) 0.00275 ;
         fieldValues
         (
             volScalarFieldValue alpha.water 1
