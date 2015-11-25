@@ -10043,6 +10043,10 @@ boundaryField
         inletValue      uniform 0;
         value           uniform 0;
     }
+    frontAndBack
+    {
+        type            empty;
+    }
     frontAndBack_pos
     {
         type            wedge;

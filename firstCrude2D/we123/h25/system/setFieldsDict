@@ -1,0 +1,47 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      setFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+defaultFieldValues
+(
+    volScalarFieldValue alpha.water 0
+);
+
+regions
+(
+ cylinderToCell // Droplet position and size
+    {
+      p1 (0.05 0.027 0);
+      p2 (0.05 0.027 0.010);
+      radius 0.00155;
+        fieldValues
+        (
+            volScalarFieldValue alpha.water 1
+	    volVectorFieldValue U (0 -1.69 0)
+        );
+    }
+ boxToCell // Basin depth
+    {
+	box (0 0 0) (0.100 0.025 0.010);
+        fieldValues
+        (
+            volScalarFieldValue alpha.water 1
+        );
+    }
+);
+
+
+// ************************************************************************* //

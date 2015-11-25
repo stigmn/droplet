@@ -10044,6 +10044,10 @@ boundaryField
         type            pressureInletOutletVelocity;
         value           uniform (0 0 0);
     }
+    frontAndBack
+    {
+        type            empty;
+    }
     frontAndBack_pos
     {
         type            wedge;
